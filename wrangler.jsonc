@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "balula",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2025-08-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "CATALOG_KV",
+      "id": "3fd00b51723e41a38a2b2f6ad43a959c",
+      "preview_id": "e94c88d189834d84b8cd6342aa069aaf"
+    }
+  ],
+  "vars": {
+    "YUPOO_STORE": "xilanhua666",
+    "YUPOO_BASE_URL": "https://xilanhua666.x.yupoo.com",
+    "YUPOO_USER_ID": "3378337",
+    "SYNC_MAX_PAGES": "110",
+    "SYNC_PAGES_PER_RUN": "40",
+    "SYNC_REFRESH_HOURS": "12",
+    "FOOTBALL_YUPOO_STORE": "yhc956848708",
+    "FOOTBALL_YUPOO_BASE_URL": "https://yhc956848708.x.yupoo.com",
+    "FOOTBALL_YUPOO_USER_ID": "1193332",
+    "FOOTBALL_SYNC_CATEGORIES_PER_RUN": "8",
+    "FOOTBALL2_YUPOO_STORE": "dachang88",
+    "FOOTBALL2_YUPOO_BASE_URL": "https://dachang88.x.yupoo.com",
+    "FOOTBALL3_YUPOO_STORE": "pp111115555",
+    "FOOTBALL3_YUPOO_BASE_URL": "https://pp111115555.x.yupoo.com",
+    "BASKETBALL_YUPOO_CATEGORY_ID": "3857578",
+    "ON_RUNNING_YUPOO_CATEGORY_ID": "4962907",
+    "STORE_NAME": "Balula Imports",
+    "WHATSAPP_NUMBER": "554784888409"
+  },
+  "triggers": {
+    "crons": ["0 */6 * * *"]
+  }
+}
